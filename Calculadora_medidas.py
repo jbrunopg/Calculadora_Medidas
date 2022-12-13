@@ -1,22 +1,11 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-
 from tkinter import *
 from tkinter import ttk
-
-
-# In[6]:
 
 
 # cores
 cor1 = '#3b3b3b' # preto
 
 
-
-# In[9]:
 
 
 janela = Tk()
@@ -34,8 +23,6 @@ frame_esquerdo.place(x=2, y=54)
 
 frame_direita = Frame(janela, width=198, height=260, bg='white', pady=0, padx=3, relief='flat')
 frame_direita.place(x=454, y=2)
-
-
 
 
 
