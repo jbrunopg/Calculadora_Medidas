@@ -26,7 +26,10 @@ frame_direita.place(x=454, y=2)
 estilo = ttk.Style(janela)
 estilo.theme_use("clam")
 
+# label para frame cima
 
+1_app_nome = Label(frame_cima, text="Calculadora de Unidades de Medidas", height=1, padx=0, relief="flat", anchor="center", font=("Ivy 15 bold"), bg=cor2)
+1_app_nome.place(x=50, y=10)
 
 
 janela.mainloop()
