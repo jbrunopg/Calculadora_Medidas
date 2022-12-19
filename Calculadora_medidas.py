@@ -4,6 +4,7 @@ from tkinter import ttk
 # cores
 cor1 = '#3b3b3b' # preto
 cor2 = '#ffffff' # branco
+cor3 = '#48b3e0' # azul
 
 janela = Tk()
 janela.title('')
@@ -26,10 +27,15 @@ frame_direita.place(x=454, y=2)
 estilo = ttk.Style(janela)
 estilo.theme_use("clam")
 
-# label para frame cima
+# Configurando frame cima
 
-1_app_nome = Label(frame_cima, text="Calculadora de Unidades de Medidas", height=1, padx=0, relief="flat", anchor="center", font=("Ivy 15 bold"), bg=cor2)
-1_app_nome.place(x=50, y=10)
+l_app_nome = Label(frame_cima, text=('Calculadora de Unidades de Medidas'), height=1, padx=0, relief='flat', anchor='center', font=('Ivy 15 bold '), bg=cor3, fg=cor2)
+l_app_nome.place(x=50, y=10)
+
+# Configurando frame esquerdo
+
+b_0 = Label(frame_esquerdo, text="Peso", width=10, height=2, relief="flat" overrelief='solid', anchor='nw', font=('Ivy 15 bold '), bg=cor2, fg=cor3)
+b_0.grid(row=0, column=0, sticky=NSEM, pady=5, padx=5)
 
 
 janela.mainloop()
